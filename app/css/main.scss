@@ -385,7 +385,6 @@ a:hover, a:focus, a:active {
   margin-top: 80px;
   border: 1px solid #AE7C78;
   padding: 40px 44px 64px;
-  margin-bottom: 100px;
 
   h2 {
     font-family: Playfair Display, serif;
@@ -411,6 +410,88 @@ a:hover, a:focus, a:active {
         margin-top: 16px;
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+.map {
+  margin-top: 80px;
+  background: url(/img/map.png);
+  height: 644.1px;
+  padding: 52px 0 0 222px;
+  .contacts {
+    background: #F7FAFC;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    width: 386px;
+    height: 520px;
+    padding: 40px 108px 65px 35px;
+
+    h2 {
+      font-family: Playfair Display, serif;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 42px;
+    }
+    .go {
+      margin-bottom: 21px;
+    }
+    .address {
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .time_1, .call_us {
+      margin-bottom: 13.5px;
+    }
+    .time_2 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    .number {
+      font-weight: 500;
+      margin-bottom: 34.5px;
+    }
+    .chat_us {
+      margin-bottom: 17px;
+    }
+    .mail {
+      font-weight: 500;
+    }
+  }
+}
+
+.footer-block {
+  background: #AE7C78;
+  padding:24px 0 40px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    column-gap: 105px;
+    .footer-list {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .footer-item {
+        list-style-type: none;
+
+        .footer-link {
+          color: #FFFFFF;
+        }
+
+      }
+
+      .footer-item:first-child {
+        margin-right: 103px;
+      }
+
+    }
+
+    .social{
+      display: flex;
+      gap: 20px;
     }
   }
 }
