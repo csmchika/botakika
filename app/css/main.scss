@@ -335,7 +335,6 @@ a:hover, a:focus, a:active {
 
 .news {
   margin-top: 80px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   .news-info{
@@ -378,6 +377,40 @@ a:hover, a:focus, a:active {
 
     .photo-3 {
       grid-area: ph3;
+    }
+  }
+}
+
+.reviews {
+  margin-top: 80px;
+  border: 1px solid #AE7C78;
+  padding: 40px 44px 64px;
+  margin-bottom: 100px;
+
+  h2 {
+    font-family: Playfair Display, serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+
+  }
+
+  .full-reviews {
+    display: flex;
+    justify-content: space-between;
+
+    .review {
+      text-align: center;
+
+      .review-author {
+        font-weight: 500;
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
     }
   }
 }
