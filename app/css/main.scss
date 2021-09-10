@@ -276,7 +276,6 @@ a:hover, a:focus, a:active {
 
 .sale {
   margin-top: 80px;
-  margin-bottom: 100px;
   background: #AE7C78;
   display: flex;
   gap: 120px;
@@ -298,6 +297,87 @@ a:hover, a:focus, a:active {
       line-height: 29px;
 
       color: #FFFFFF;
+    }
+  }
+}
+
+.steps {
+  margin-top: 80px;
+  h2{
+    text-align: center;
+    font-family: Playfair Display,serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+  }
+  .steps-info {
+    display: flex;
+    justify-content: space-between;
+
+    .step {
+      align-content: center;
+      text-align: center;
+
+      img {
+        margin-bottom: 8px;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.news {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  .news-info{
+    padding-top: 70px;
+    width: 487px;
+    margin-right: 21px;
+    h2 {
+      font-family: Playfair Display, serif;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.02em;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 40px;
+    }
+    .social{
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .news-images {
+    display: grid;
+    grid-template-areas: "ph1 ph3"
+                         "ph2 ph3";
+    gap: 20px;
+
+    .photo-1 {
+      grid-area: ph1;
+    }
+
+    .photo-2 {
+      grid-area: ph2;
+    }
+
+    .photo-3 {
+      grid-area: ph3;
     }
   }
 }
