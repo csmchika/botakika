@@ -1,83 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+$color: #AE7C78;
 
 body {
-  position: relative;
-  width: 1440px;
-  height: 4470px;
-  background: #FFFFFF;
-  font-family:Montserrat,sans-serif;
-  font-weight: 400;
+  margin:0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  margin: 0;
-  color: #AE7C78;
-}
-a {
-  text-decoration:none;
-  color: #AE7C78;
+  line-height: 20px;
+
+  color: $color;
 }
 
-a:hover {
-  text-decoration:none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: $color;
 }
 
-.header-top {
-  margin-top: 26px;
-
-}
-.header-top ul {
-  display: flex;
-  justify-content: space-between;
+.header-block {
+  margin: 26px 0 0 0;
   border-top: 1px solid #AE7C78;
   border-bottom: 1px solid #AE7C78;
-  align-items: center;
-  text-decoration: none;
-  padding: 22px 120px;
-  height: 64px;
-  margin-bottom: 81px;
-  li {
-    line-height: 20px;
-    list-style-type: none;
+
+  .header-nav {
+    padding: 0;
+
+    .header-list {
+      margin: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+
+      .header-item {
+        list-style-type: none;
+
+        .header-link {
+          color: $color;
+        }
+
+      }
+
+      .header-item:nth-child(2) {
+        .header-link{
+          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        margin-right: 102px;
+      }
+      .header-item:first-child{
+        margin-right: 102px;
+      }
+      .header-item:nth-child(3),.header-item:nth-child(4) {
+        margin-right: 62px;
+      }
+
+      .header-item:nth-child(5),.header-item:nth-child(6) {
+        margin-right: 89px;
+      }
+
+      .header-item:last-child{
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
   }
 }
 
 .info {
-  h1 {
-    width: 384px;
-    height: 118px;
-    left: 120px;
-    top: 171px;
+  margin-top: 81px;
+  display: grid;
+  grid-template-columns: 384px 793px;
+  gap: 23px;
 
-    font-family: Playfair Display, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 59px;
+  .info-left {
+    padding: 0;
+    margin: 0;
+    .info-main-text{
+      font-family: Playfair Display, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 44px;
+      line-height: 59px;
+      margin-bottom: 0;
+    }
+
+    .info-text {
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 24px;
+      margin-bottom: 94px;
+    }
+
+    .info-see {
+      background: #D89999;
+      border-radius: 40px;
+
+      padding: 30px 70px;
+
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
   }
-
-  p {
-    width: 384px;
-    height: 58px;
-    left: 120px;
-    top: 313px;
-
-    font-size: 24px;
-    line-height: 29px;
+  .info-right {
+    display: flex;
+    flex-wrap: wrap;
+    .info-photo1{
+      border-radius: 10px;
+      width: 386px;
+      padding-top: 60px;
+      margin-right: 20px;
+      img {
+        height: 404px;
+      }
+    }
+    .info-photo2{
+      border-radius: 10px;
+      width: 387px;
+      height: 420px;
+    }
   }
 }
 
-.button-see {
-  width: 285px;
-  height: 80px;
-  left: 120px;
-  top: 435px;
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
 
-  background: #D89999;
-  border-radius: 40px;
-  a {
-    font-size: 16px;
-    line-height: 20px;
+  .advantage {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 49px;
+    .advantage-image {
+      margin-right: 20px;
+    }
 
-
-    color: #FFFFFF;
+    .advantage-info {
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+      }
+      p {
+        width: 285px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .advantage:last-child {
+    margin-right: 0;
   }
 }
